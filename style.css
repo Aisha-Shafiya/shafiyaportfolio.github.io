@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    color: #F7C71F;
+}
+
+.header {
+    padding: 04.8rem;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+.header .logo {
+    height: 8rem;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: #F7C71F;
+}
+
+.mobile-nav-icon {
+    height: 4rem;
+    width: 4rem;
+    color: #F7C71F;
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/* Styling of images and content */
+
+.rowHeroCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.columnHeroCont h1 {
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.columnHeroCont h4 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.buttonsHero button {
+    padding: 12px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.buttonsHero button:hover {
+    background-color: #F7C71F;
+    color: #fff;
+}
+
+.slides {
+    display: none;
+    /* position: absolute;
+    top: -100px;
+    left: 0; */
+}
+
+.slides img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+.slides.active {
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* start of about section */
+.about{
+    margin-top: 15vh;
+}
+.columContentAboutOne {
+    margin-left: 15vh;
+    width: 80%;
+    margin-top: 5vh;
+}
+
+.container-skills {
+    font-size: 1.5rem;
+}
+
+.tab-content .row {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    gap: 10vh;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.container-skills {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.html,
+.css,
+.Bootstrap,
+.wordpress {
+    width: 80%;
+    height: 100%;
+    background-color: #F7C71F;
+
+}
+
+.react,
+.js {
+    width: 70%;
+    height: 100%;
+    background-color: #F7C71F;
+
+}
+
+.columContentAboutOne h2.main-heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.ContactSection h2.main-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+.portfolio h2.main-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container1 h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #F7C71F;
+    line-height: 1.5rem;
+    margin-top: 3vh;
+}
+
+h2.main-heading {
+    color: #F7C71F;
+    font-size: 3rem;
+}
+
+.container1 h3 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.container1 span {
+    color: #F7C71F;
+}
+
+.container1 p {
+    color: #D4D4D4;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.container1 p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2rem;
+    margin-top: 3vh;
+}
+
+.columContentAboutTwo {
+    margin-left: 15vh;
+    margin-top: 5vh;
+    width: 80%;
+}
+
+.tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 2px solid #f1f1f1;
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: 1.2em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.tab-container button {
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+    background-color: background-color 0.3s;
+    font-size: 18px;
+    text-align: center;
+    background-color: #F7C71F;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.tab-container button:hover {
+    background-color: #fff;
+}
+
+.class-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid rgb(50, 50, 42);
+}
+
+.tab-content p {
+    color: #D4D4D4;
+    font-size: 2rem;
+}
+
+.tab-content h3 {
+    font-size: 1.5rem;
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* end of about section */
+
+/* style of filter */
+section.portfolio{
+    margin-left: 15vh;
+    width: 80%;
+    margin-top: 15vh;
+}
+
+.myBtnContainer {
+    margin-top: 15vh;
+}
+
+.filterDiv {
+    float: left;
+    width: 25%;
+    display: none;
+    background-color: #000;
+    padding: 10px;
+}
+
+.filterDiv img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.show {
+    display: block;
+}
+
+.portfolio {
+    margin-top: 20px;
+}
+
+#myBtnContainer {
+    margin-bottom: 20px;
+}
+
+.conatinerPort,
+.conatinerPort>.filterDiv {
+    padding: 10px;
+}
+
+.conatinerPort::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.btn:hover {
+    background-color: #F7C71F;
+    color: #fff;
+}
+
+.btn.active {
+    background-color: #F7C71F !important;
+    color: #fff !important;
+}
+
+/* end of filter */
+
+/* Start of contact */
+.ContactSection {
+    font-size: 3rem;
+    margin-left: 15vh;
+    margin-top: 15vh;
+}
+
+.rowContactOne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.ContactHeading{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.fa-location-dot, .fa-envelope, .fa-phone{
+    font-size: 3rem;
+    color: #F7C71F;
+}
+.ContentContact{
+    color: #D4D4D4;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ParaContent{
+    color: #D4D4D4;
+    font-size: 2rem;
+}
+/* end of contact */
+
+/* start of footer */
+.footer{
+    text-align: center;
+    margin-top: 15vh;
+   padding: 2vh;
+   background-color: #1b1b1d;
+   font-size: 1.8rem;
+   color: #D4D4D4;
+}
+/* end of footer */
+@media(max-width:62rem) {
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        border: 3px solid #F7C71F;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        background-color: #1b1b1d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 999;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    .rowHeroCont {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .slides {
+        margin-left: 30px;
+        padding: 30px;
+    }
+
+    .columnHeroCont h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .columnHeroCont h4 {
+        font-size: 2rem;
+        color: #fff;
+        margin-top: 2vh;
+    }
+
+    .columContentAboutOne {
+        margin-left: 5vh;
+        width: 80%;
+        margin-top: 3vh;
+    }
+
+    .columContentAboutTwo {
+        margin-left: 5vh;
+        margin-top: 3vh;
+        width: 80%;
+    }
+
+
+    .tab-container {
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 2px solid #f1f1f1;
+        flex-direction: column;
+    }
+
+    .columnHeroCont h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+
+    .columnHeroCont h4 {
+        font-size: 2rem;
+        color: #fff;
+        line-height: 2rem;
+    }
+
+    .tab-content .row {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .buttonsHero button {
+        margin-left: 0px;
+    }
+
+    .filterDiv {
+
+        width: 100%;
+
+    }
+
+    #myBtnContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.5vh;
+    }
+
+    .portfolio {
+        margin-left: 4vh;
+    }
+
+    .conatinerPort,
+    .conatinerPort>.filterDiv {
+        padding: 0px;
+        padding-top: 15px;
+    }
+
+    .ContactSection{
+        margin-left: 3vh;
+        margin-top: 3vh;
+    }
+
+    .rowContactOne{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .columOneContact, .columTwoContact, .columThreeContact{
+        margin-bottom: 20px;
+    }
+
+    .columContentAboutOne h2.main-heading {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .portfolio h2.main-heading{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .ContactSection h2.main-heading{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    section.portfolio{
+        margin-left: 5vh;
+        margin-top: 3vh;
+    }
+    section.about{
+        margin-top: 3vh;
+    }
+
+    .container1 p{
+        line-height: 2rem;
+    }
+    .container1 h3{
+        line-height: 2.2rem;
+    }
+    .footer{
+   
+        margin-top:3vh;
+      
+    }
+}
